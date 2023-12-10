@@ -4,7 +4,7 @@ import com.jogamp.opengl.*;
 public class Main extends JFrame {
 
     public Main() {
-        setTitle("3D Игра");
+        setTitle("3D Game");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(800, 600);
         setLocationRelativeTo(null);
@@ -69,7 +69,7 @@ public class Game implements GLEventListener {
         gl.glLoadIdentity();
         gl.glTranslatef(x, y, z);
 
-        // .... добавьте ваш код для отрисовки игровых объектов ....
+        // .... add your code to draw game objects ....
 
         gl.glFlush();
     }
@@ -111,6 +111,6 @@ public class Game implements GLEventListener {
     }
 
     public void keyReleased(char key) {
-        // Дополнительный код, если необходимо, при отпускании клавиши
+        // Additional code, if necessary, when releasing the key
     }
 }
